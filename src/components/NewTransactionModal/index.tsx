@@ -22,14 +22,20 @@ export function NewTransitionModal({
   const [category, setCategory] = useState("");
   const [type, setType] = useState("deposit");
 
-  function handleCreateNewTransition(event: FormEvent) {
+  async function handleCreateNewTransition(event: FormEvent) {
     event.preventDefault();
-    createTransaction({
+
+    await createTransaction({
       title,
       amount,
       category,
       type,
     });
+    setTitle("");
+    setAmount(0);
+    setCategory("");
+    setType("deposit");
+    onRequestClose();
   }
 
   return (
