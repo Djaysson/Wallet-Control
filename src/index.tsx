@@ -15,19 +15,11 @@ createServer({
       transactions: [
         {
           id: 1,
-          title: "Freelance de website",
+          title: "Exemplo",
           type: "deposit",
-          category: "dev",
-          amount: 7000,
-          createdAt: new Date("2022-04-08 19:45:00"),
-        },
-        {
-          id: 2,
-          title: "Aluguel",
-          type: "withdraw",
-          category: "Ponto comercial",
-          amount: 2000,
-          createdAt: new Date("2022-04-01 08:35:00"),
+          category: "Compras",
+          amount: 0,
+          createdAt: new Date(),
         },
       ],
     });
