@@ -78,7 +78,7 @@ export function NewTransitionModal({
             activeColor={"green"}
           >
             <img src={incomeImg} alt="Entry" />
-            <span>Entrada</span>
+            <span>Receita</span>
           </RadioBox>
           <RadioBox
             type="button"
@@ -89,7 +89,7 @@ export function NewTransitionModal({
             activeColor={"red"}
           >
             <img src={outcomeImg} alt="Output" />
-            <span>Saida</span>
+            <span>Despesa</span>
           </RadioBox>
         </TransactionTypeContainer>
 
